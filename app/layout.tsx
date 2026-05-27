@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Chaitanya Rathi | Full Stack Developer",
   description:
     "Portfolio of Chaitanya Rathi, full stack developer focused on backend systems, cloud infrastructure, and realtime products.",
+  icons: {
+    icon: "/diet-coke.svg",
+  },
 };
 
 export default function RootLayout({
