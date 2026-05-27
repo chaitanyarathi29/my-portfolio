@@ -354,6 +354,23 @@ a {
   z-index: 1;
 }
 
+.sequence-interest {
+  position: absolute;
+  right: 6vw;
+  bottom: 32px;
+  max-width: 280px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(10, 10, 12, 0.78);
+  box-shadow: var(--shadow-soft);
+  z-index: 3;
+}
+
+.sequence-interest .panel-text {
+  font-size: 0.85rem;
+}
+
 .info-section {
   padding: 120px 0;
   border-top: 1px solid var(--border);
@@ -637,6 +654,7 @@ a {
   display: grid;
   gap: 12px;
   box-shadow: var(--shadow-soft);
+  overflow: hidden;
 }
 
 .github-header {
@@ -644,6 +662,7 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .github-title {
@@ -656,11 +675,15 @@ a {
 .github-name {
   margin-top: 8px;
   font-size: 1.1rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .github-desc {
   color: var(--muted);
   font-size: 0.95rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .github-link {
@@ -668,6 +691,8 @@ a {
   font-size: 0.7rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .github-stats {
@@ -758,6 +783,12 @@ a {
     transform: translateX(-50%);
   }
 
+  .sequence-interest {
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 320px;
+  }
+
   .edu-links {
     grid-template-columns: 1fr;
   }
@@ -779,6 +810,18 @@ a {
 
   .hero-title {
     font-size: clamp(3.2rem, 11vw, 5.4rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    width: auto;
+    padding: 8px 16px;
+  }
+
+  .nav-links,
+  .nav-cta {
+    display: none;
   }
 }
 

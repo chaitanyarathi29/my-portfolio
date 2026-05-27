@@ -17,7 +17,7 @@ export default function Home() {
               frameExtension="jpg"
               zeroPad={3}
               fit="contain"
-              fitPadding={0.96}
+              fitPadding={0.74}
             />
             <div className="sequence-overlay">
               <div className="content hero-overlay">
@@ -42,15 +42,16 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="hero-panel">
-                  <p className="panel-title">Studio session 01</p>
+                  <p className="panel-title">Systems in focus</p>
                   <p className="panel-text">
-                    Scroll to rotate the late-night workspace and follow the
-                    quiet break between builds.
+                    Scroll to explore a calm developer workspace built around
+                    backend systems, cloud infrastructure, and realtime
+                    reliability.
                   </p>
                   <div className="panel-meta">
-                    <span>35mm documentary tone</span>
-                    <span>Teal monitor glow</span>
-                    <span>Image sequence</span>
+                    <span>Cloud-first engineering</span>
+                    <span>Realtime systems</span>
+                    <span>AI SaaS workflows</span>
                   </div>
                 </div>
               </div>
@@ -60,6 +61,13 @@ export default function Home() {
               </div>
             </div>
             <div className="sequence-vignette" aria-hidden="true" />
+            <div className="sequence-interest">
+              <p className="panel-title">Building focus</p>
+              <p className="panel-text">
+                I love designing scalable backend systems, cloud infrastructure,
+                and realtime products that stay reliable under load.
+              </p>
+            </div>
           </div>
         </section>
 
